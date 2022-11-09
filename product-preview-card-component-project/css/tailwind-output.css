@@ -513,16 +513,33 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-col {
@@ -549,12 +566,6 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -569,27 +580,19 @@ video {
   border-bottom-left-radius: 0.5rem;
 }
 
-.bg-myAmber {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 234 227 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-myBlue {
+.bg-darkCyan {
   --tw-bg-opacity: 1;
-  background-color: rgb(61 129 104 / var(--tw-bg-opacity));
+  background-color: hsl(158 36% 37% / var(--tw-bg-opacity));
 }
 
-.fill-white {
-  fill: #fff;
-}
-
-.fill-red-600 {
-  fill: #dc2626;
+.bg-cream {
+  --tw-bg-opacity: 1;
+  background-color: hsl(30 38% 92% / var(--tw-bg-opacity));
 }
 
 .p-6 {
@@ -619,14 +622,19 @@ video {
   font-family: Fraunces, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -650,21 +658,38 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-myBlue {
-  --tw-text-opacity: 1;
-  color: rgb(61 129 104 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
+.text-darkCyan {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: hsl(158 36% 37% / var(--tw-text-opacity));
 }
 
 .line-through {
   text-decoration-line: line-through;
+}
+
+@media (min-width: 640px) {
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
+  .sm\:w-1\/2 {
+    width: 50%;
+  }
+
+  .sm\:w-1 {
+    width: 0.25rem;
+  }
 }

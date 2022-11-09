@@ -7,8 +7,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				myAmber: '#F3EAE3',
-				myBlue: '#3D8168',
+				darkCyan: 'hsl(158, 36%, 37%)',
+				cream: 'hsl(30, 38%, 92%)',
+				veryDarkBlue: 'hsl(30, 38%, 92%)',
+				darkGrayishBlue: 'hsl(228, 12%, 48%)',
 			},
 			fontFamily: {
 				montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
